@@ -1,13 +1,14 @@
 import Header from "./component/Header";
-import Profile from "./component/Profile";
-import AppRoute from "./route/route";
+// import AppRoute from "./route/route";
+import Footer from "./component/Footer"
 
 function App() {
   return (
     <div>
-    <AppRoute/>
+    
     <Header />
-    <Profile />
+    
+    <Footer/>
     
     </div>
   );

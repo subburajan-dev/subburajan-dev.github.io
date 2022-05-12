@@ -1,24 +1,29 @@
-import {Component} from "react"
-// import {Header} from "../component/Header"
-// import {Profile} from "../component/Profile"
+import Header from "../component/Header"
+import Profile from "../component/Profile"
 import Home from "../component/Home"
+import About from "../component/About"
+import Resume from "../component/Resume"
 import {BrowserRouter as Router, Route,Routes} from "react-router-dom"
 
-class AppRoute extends Component{
-    render(){
+const AppRoute=()=>{
         return <div>
             <Router>
+                <Header/>
                 <Routes>
 
-                    <Route path="/" component={Home}>
+                    <Route exact path="/" element={<Home/>}/>
 
-                    </Route>
+                    <Route path="project" element={<Profile/>}/>
+                    
+                    <Route path="about" element={<About/>}/>
+
+                    <Route path="resume" element={<Resume/>}/>   
+                                     
+                    <Route path="*" element={<div>404 not found</div>}/>
 
                     </Routes>
             </Router>
-            Routing
+            {/* Routing */}
             </div>
     }
-}
-
 export default AppRoute;
