@@ -3,12 +3,13 @@ import Profile from "../component/Profile"
 import Home from "../component/Home"
 import About from "../component/About"
 import Resume from "../component/Resume"
+import Footer from "component/Footer"
 import {BrowserRouter as Router, Route,Routes} from "react-router-dom"
 
 const AppRoute=()=>{
         return <div>
             <Router>
-                <Header/>
+                <Header />
                 <Routes>
 
                     <Route exact path="/" element={<Home/>}/>
@@ -22,8 +23,9 @@ const AppRoute=()=>{
                     <Route path="*" element={<div>404 not found</div>}/>
 
                     </Routes>
+                    <Footer/>
             </Router>
-            {/* Routing */}
+            
             </div>
     }
 export default AppRoute;

@@ -25,7 +25,7 @@ const Resume = (props) => {
         <Document file={pdflink}  className="d-flex justify-content-center">
         <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
         </Document>
-        <Button href={pdflink} onClick={debug()}>diwnload button</Button>
+        <Button href={pdflink} onClick={debug()}>download button</Button>
     </Container>
 }
 

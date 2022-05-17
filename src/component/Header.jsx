@@ -1,17 +1,25 @@
 // import { Component } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import "../styles/style.css" 
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
+// function setActive(e){
+//   console.log(e)
+  
+// }
+const setActive=(e)=>{
+  console.log(e);
+}
 const Header = () => {
+  
   return (
-    <Navbar bg="primary" variant="dark">
-      <Container>
-        <Navbar.Brand className="">Portfolio</Navbar.Brand>
-        <Nav className="me-auto  py-2">
-          <Nav.Link className="" as={Link} to="/">
+    <Navbar bg="primary" variant="dark" className="sticky-top">
+      {/* <Container fluid> */}
+        <Navbar.Brand className="mx-4">Portfolio</Navbar.Brand>
+        <Nav className="mx-2  py-2">
+          <Nav.Link className="" as={Link} to="/" onClick={setActive}>
             Home
           </Nav.Link>
           <Nav.Link className="" as={Link} to="/project">
@@ -24,9 +32,9 @@ const Header = () => {
           <Nav.Link className="" as={Link} to="/resume">
             Resume
           </Nav.Link>
-          <Button href="" target="__blank" >Download CV</Button>
+          <Button  className="download-btn" >Download CV</Button>
         </Nav>
-      </Container>
+      {/* </Container> */}
     </Navbar>
   );
 };
