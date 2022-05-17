@@ -1,7 +1,8 @@
+import { Container} from "react-bootstrap";
 const Footer = () => {
     return (
-        <div>
-            footer
-        </div>
+        <Container fluid bg="success" className="">
+            <p>Contact:subburajan-perumal@gmail.com</p>
+        </Container>
     ) };
 export default Footer 

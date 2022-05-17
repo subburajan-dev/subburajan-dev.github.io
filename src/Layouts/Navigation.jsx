@@ -1,9 +1,6 @@
 
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "../Styles/style.css" 
-
-import "bootstrap/dist/css/bootstrap.min.css";
 
 // function setActive(e){
 //   console.log(e)
@@ -15,7 +12,7 @@ const setActive=(e)=>{
 const Navigation = () => {
   
   return (
-    <Navbar bg="primary" collapseOnSelect variant="dark" expand="sm" className="fixed-top">
+    <Navbar bg="primary" collapseOnSelect variant="dark" expand="sm" className="sticky-top">
       <Container >
         <Navbar.Brand className="mx-4">Portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>

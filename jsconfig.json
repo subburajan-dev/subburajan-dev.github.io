@@ -6,10 +6,11 @@
             "Assets/*":["./Assets/*"],
             "Components/*":["./Components/*"],
             "Layouts/*":["./Layouts/*"],
-            "Routes/*":["./Routes/*"]
+            "Routes/*":["./Routes/*"],
+            "Styles/*":["./Styles/*"]
         }
     },
     "exclude": ["node_modules"],
-    "include": ["src"],
+    "include": ["src"]
 
 }

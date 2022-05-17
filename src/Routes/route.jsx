@@ -4,7 +4,8 @@ import Home from "Components/Home"
 import About from "Components/About"
 import Resume from "Components/Resume"
 import Footer from "Layouts/Footer"
-import {BrowserRouter as Router, Route,Routes} from "react-router-dom"
+// import {Navigation,Footer} from "Layouts" 
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 
 const AppRoute=()=>{
         return <div>
