@@ -1,7 +1,7 @@
 // import { Component } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "../styles/style.css" 
+import "../Styles/style.css" 
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -15,10 +15,12 @@ const setActive=(e)=>{
 const Header = () => {
   
   return (
-    <Navbar bg="primary" variant="dark" className="sticky-top">
-      {/* <Container fluid> */}
+    <Navbar bg="primary" collapseOnSelect variant="dark" expand="sm" fixed="top">
+      <Container >
         <Navbar.Brand className="mx-4">Portfolio</Navbar.Brand>
-        <Nav className="mx-2  py-2">
+        <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav>
           <Nav.Link className="" as={Link} to="/" onClick={setActive}>
             Home
           </Nav.Link>
@@ -33,8 +35,9 @@ const Header = () => {
             Resume
           </Nav.Link>
           <Button  className="download-btn" >Download CV</Button>
-        </Nav>
-      {/* </Container> */}
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
     </Navbar>
   );
 };

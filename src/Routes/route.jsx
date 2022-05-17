@@ -1,9 +1,9 @@
-import Header from "../component/Header"
-import Profile from "../component/Profile"
-import Home from "../component/Home"
-import About from "../component/About"
-import Resume from "../component/Resume"
-import Footer from "component/Footer"
+import Header from "Layouts/Header"
+import Profile from "../Components/Profile"
+import Home from "../Components/Home"
+import About from "../Components/About"
+import Resume from "../Components/Resume"
+import Footer from "Layouts/Footer"
 import {BrowserRouter as Router, Route,Routes} from "react-router-dom"
 
 const AppRoute=()=>{

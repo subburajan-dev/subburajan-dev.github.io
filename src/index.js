@@ -1,13 +1,14 @@
 import App from './App';
-import AppRoute from './route/route';
+import AppRoute from './Routes/route';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-
+// import {Circle2} from 'react-preloaders';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    {/* <Circle2/> */}
     <AppRoute>
     <App />
     </AppRoute>
