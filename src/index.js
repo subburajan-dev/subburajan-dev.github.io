@@ -1,4 +1,4 @@
-import App from './App';
+// import App from './App';
 import AppRoute from './Routes/route';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -10,7 +10,7 @@ root.render(
   <React.StrictMode>
     {/* <Circle2/> */}
     <AppRoute>
-    <App />
+    
     </AppRoute>
   </React.StrictMode>
 );

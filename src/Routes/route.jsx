@@ -1,15 +1,15 @@
-import Header from "Layouts/Header"
-import Profile from "../Components/Profile"
-import Home from "../Components/Home"
-import About from "../Components/About"
-import Resume from "../Components/Resume"
+import Navigation from "Layouts/Navigation"
+import Profile from "Components/Profile"
+import Home from "Components/Home"
+import About from "Components/About"
+import Resume from "Components/Resume"
 import Footer from "Layouts/Footer"
 import {BrowserRouter as Router, Route,Routes} from "react-router-dom"
 
 const AppRoute=()=>{
         return <div>
             <Router>
-                <Header />
+                <Navigation />
                 <Routes>
 
                     <Route exact path="/" element={<Home/>}/>
