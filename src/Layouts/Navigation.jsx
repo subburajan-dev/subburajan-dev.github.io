@@ -1,4 +1,3 @@
-
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -10,7 +9,6 @@ const setActive=(e)=>{
   console.log(e);
 }
 const Navigation = () => {
-  
   return (
     <Navbar bg="primary" collapseOnSelect variant="dark" expand="sm" className="sticky-top">
       <Container >

@@ -1,4 +1,3 @@
-// import App from './App';
 import AppRoute from 'Routes/Route';
 import React from 'react';
 import ReactDOM from 'react-dom/client';

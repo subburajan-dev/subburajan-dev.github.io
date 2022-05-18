@@ -1,9 +1,12 @@
-import {Container} from "react-bootstrap"
+import {Button,Container} from "react-bootstrap"
 
 const Home = () => {
-    return <Container fluid>
-        
-        <button>new element</button>
-    </Container>;
-};
+    return (
+    <Container fluid>
+        <div  className="container fluid">
+                I am Full Stack Developer
+            <Button>testing</Button>
+        </div>
+    </Container>
+)};
 export default Home;
