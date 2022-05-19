@@ -1,14 +1,10 @@
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
-// function setActive(e){
-//   console.log(e)
-  
-// }
+import {pdflink,LINKEDIN,GITHUB} from "Constants/appConstants";
 const setActive=(e)=>{
   console.log(e);
 }
-const Navigation = () => {
+const Navigation = (props) => {
   return (
     <Navbar bg="primary" collapseOnSelect variant="dark" expand="sm" className="sticky-top">
       <Container >
@@ -29,7 +25,11 @@ const Navigation = () => {
           <Nav.Link className="" as={Link} to="/resume">
             Resume
           </Nav.Link>
-          <Button  className="download-btn" >Download CV</Button>
+          <Nav.Link href={LINKEDIN} target="_blank">
+            <i className="">LinkedIn</i>
+          </Nav.Link>
+          <Nav.Link href={GITHUB} target="_blank">github</Nav.Link>
+          <Button  className="download-btn" href={pdflink} >Download CV</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
