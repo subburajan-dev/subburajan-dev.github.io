@@ -6,7 +6,7 @@ const setActive=(e)=>{
 }
 const Navigation = (props) => {
   return (
-    <Navbar bg="primary" collapseOnSelect variant="dark" expand="sm" className="sticky-top">
+    <Navbar bg="dark" collapseOnSelect variant="dark" expand="sm" className="sticky-top">
       <Container >
         <Navbar.Brand className="mx-4">Portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
@@ -28,8 +28,8 @@ const Navigation = (props) => {
           <Nav.Link href={LINKEDIN} target="_blank">
             <i className="">LinkedIn</i>
           </Nav.Link>
-          <Nav.Link href={GITHUB} target="_blank">github</Nav.Link>
-          <Button  className="download-btn" href={pdflink} >Download CV</Button>
+          <Nav.Link href={GITHUB} target="_blank"><i className="bi bi-github"></i></Nav.Link>
+          <Button  className="btn__download" href={pdflink} >Download CV</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
